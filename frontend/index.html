@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+        .Navbar{
+            display:flex;
+            background-color: rgb(7,10,14);
+            position: fixed;
+            align-items: flex-start;
+            justify-content:space-around;
+            top:0px;
+            left:0px;
+            right:0px;  
+            height:300px; 
+            flex-direction: row;
+           
+        }
+        .content{
+            margin-top: 10px;
+        }
+        .Navbar .left-part{
+            
+            flex:1;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+           
+        }
+        .Navbar .Right-Part{
+             
+            flex:1;
+            display:flex;
+            flex-direction: row-reverse;
+            margin-top:20px;
+            
+        }
+        .Right-Part button{
+            background-color: rgb(7,10,14);
+            color: rgb(6, 194, 6);
+            border-color: rgb(6,194,6);
+            border-style: solid;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left:20px;
+            padding-right:20px;
+            transition: background-color 1s;
+            transition: color 1s;
+            border-radius: 5px;
+            margin-right: 100px;
+            
+        }
+
+        .Right-Part button:hover{
+            background-color: rgb(6,194,6);
+            color:white;
+    
+        }
+
+        .left-part img{
+            height:40px;
+            margin-left: 100px;
+        }
+        .left-part .Name{
+            color: rgb(7, 243, 7);
+            font-weight: bold;
+            font-size: large;
+            margin-top: 12px;
+            margin-left: 5px;
+        }
+
+        .Midsection{
+            flex:1;
+            display: flex;
+            margin-top:100px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(7,10,14);
+            
+        }
+        
+        .Supply-Balance span{
+             font-size: small;
+             font-family: Arial, Helvetica, sans-serif;
+             color:rgb(7, 243, 7);
+        }
+
+        .Barrow-Balance span{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color:rgb(162,81,244);
+        }
+        
+        .Net-APY{
+           
+            border-style: solid;
+            border-color: rgb(7, 243, 7);
+            height:120px;
+            width:120px;
+            display:flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+        }
+       
+       
+        .amount{
+         display: flex;
+         justify-content: center;
+         color:white;
+         margin-top: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+     </style>
+     
+
+    </head>
+    <body>
+
+     <div class = "Navbar">
+       <div class = "left-part">
+        <img src = "./imgs/Tezos.png">
+        <span class= "Name">Tezoance</span>
+      </div> 
+
+      <div class = "Midsection">
+        <div class = "Supply-Balance">
+            <span>Supply Balance</span>
+            <div class = "Supply-amount">
+                <div class = "amount">&#x24;60</div>
+            </div>
+        </div>
+
+        <div class = "Net-APY">
+           5
+        </div>
+
+        <div class = "Barrow-Balance">
+            <Span>Borrow Balance</Span>
+            <div class = "Borrow-amount">
+                <div class = "amount">&#x24;60</div>
+            </div>
+        </div>
+       
+
+       
+      </div>
+
+       
+      <div class = "Right-Part"> <button>Connect Wallet</button> </div>
+     
+     </div>
+
+
+     <div class = "content">2</div>
+
+    
+    <script src = "script.js"></script>
+
+    </body>
+
+</html>
